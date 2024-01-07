@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16
+    restart: always
+    environment:
+      POSTGRES_DB: rdbms_tools
+      POSTGRES_USER: rdbms_worker01
+      POSTGRES_PASSWORD: uL7AN2O09YLjU1cLhm1b
+      LANG: en_US.utf8  # 設置語言環境爲UTF-8
+    ports:
+      - "5432:5432"  # 如果需要外部訪問，將本地端口映射到容器端口
+    # volumes:
+    #   - /path/to/store/data:/var/lib/postgresql/data  # 可選：指定持久化數據的存儲路徑
