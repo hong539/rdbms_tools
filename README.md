@@ -3,6 +3,9 @@ rdbms_tools for testing
 
 ## Prerequisites
 
+* Docker version 24.0.7
+* Docker Compose version v2.21.0
+
 ## Quick start
 
 ```shell
